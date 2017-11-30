@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/container"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="locationnew.appsgit.com.locationexamplenew.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/buttonHolder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_above="@id/resultText"
+        android:padding="10dp"
+        >
+        <Button
+            android:onClick="callLastKnownLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Get Last known location"
+            android:layout_centerInParent="true"/>
+        <Button
+            android:onClick="callCurrentLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Get your Current Location"
+            android:layout_centerInParent="true"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/resultText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"/>
+
+</RelativeLayout>
